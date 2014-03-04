@@ -1,0 +1,80 @@
+[
+    {
+        "question": "This is the first question",
+        "type": "chose one",
+        "answers": [
+            {
+                "answer": "correct one",
+                "is correct": true
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            }
+        ]
+    },
+    {
+        "question": "This is the second question",
+        "type": "chose one",
+        "answers": [
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "corect one",
+                "is correct": true
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            }
+        ]
+    },
+    {
+        "question": "This is the third question",
+        "type": "multiple choice",
+        "answers": [
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "corect one",
+                "is correct": true
+            },
+            {
+                "answer": "wrong one",
+                "is correct": false
+            },
+            {
+                "answer": "corect one",
+                "is correct": true
+            }
+        ]
+    }
+]
