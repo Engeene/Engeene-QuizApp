@@ -29,13 +29,22 @@
             $("#afui").removeClass("ios");
     });
 </script>
+<!-- The next line loads our application logic. To know how to make sure the
+framework loads correctly tha page before running any code on it check this script. -->
+<script type="text/javascript" charset="utf-8" src="js/application.js"></script>
 <link href="css/icons.css" rel="stylesheet" type="text/css">
 <link href="css/af.ui.css" rel="stylesheet" type="text/css">
 </head>
 
+<!-- The id="afui" attribute lets the framework know where the application is. -->
 <div id="afui" class="ios">
     <div id="header"></div>
+    <!-- The id="content" attribute on this div containts the application panels. -->
     <div id="content" style="">
+        <!-- Each single class="panel" div creates a panel in the UI. The selected="selected"
+             attribute marks the default panel, that is the one that will open when the
+             application starts. Remember to give panels a proper name (it will be visible
+             by the user), and a unique HTML id (it will be used in your JS code. -->
         <div class="panel" title="Question 1" data-nav="nav_0" id="question-1" selected="selected"
         style="" data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
@@ -58,8 +67,8 @@
                         <label for="radio_1_3">Radio 3</label>
                     </div>
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
-                        <a class="button" href="#" style="" data-appbuilder-object="button">OK</a>
-                        <a class="button" href="#" style="" data-appbuilder-object="button">Clear</a>
+                        <a id="question-1-answer" class="button" href="#" style="" data-appbuilder-object="button">OK</a>
+                        <a id="question-1-clear" class="button" href="#" style="" data-appbuilder-object="button">Clear</a>
                     </div>
                 </form>
             </div>
@@ -85,8 +94,8 @@
                     <label for="checkbox_2_3">Checkbox 3</label>
                 </div>
                 <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
-                    <a class="button" href="#" style="" data-appbuilder-object="button">OK</a>
-                    <a class="button" href="#" style="" data-appbuilder-object="button">Clear</a>
+                    <a id="question-2-answer" class="button" href="#" style="" data-appbuilder-object="button">OK</a>
+                    <a id="question-2-clear" class="button" href="#" style="" data-appbuilder-object="button">Clear</a>
                 </div>
             </form>
         </div>
