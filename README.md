@@ -12,20 +12,23 @@ the subject. Should the subject be considered unable to perform mind
 challenging tasks (such as driving, or writing important emails) the
 application will suggest her to take a cup of coffee, or a nap.
 
-The first version of the application will pick a series of questions from a
+The goal of the application is to pick a series of questions from a
 local JSON file, and will prsent the questions to the user one after the other.
 Depending on the outcome of the questions the application will suggest the user
 to perform the task, to take a nap, or something.
 
-In later versions more files could be added, and remote download could be
+The first versions of the application will just ask built in questions to the
+user. That is questons that are hard coded in to the application.
+
+In later versions more questions could be added, and remote download could be
 supported, too. Also support for organizing questions in multiple categories is
 beeing considered as a later option.
 
 Further reading (TODO)
 ======================
 
-The questions file format (JSON).
+The application's views.
 
 The application's control flow.
 
-The application's views.
+The questions file format (JSON).
