@@ -45,27 +45,28 @@ framework loads correctly tha page before running any code on it check this scri
              attribute marks the default panel, that is the one that will open when the
              application starts. Remember to give panels a proper name (it will be visible
              by the user), and a unique HTML id (it will be used in your JS code. -->
-        <div class="panel" title="Question 1" data-nav="nav_0" id="question-1" selected="selected"
+        <div class="panel" title="Domanda 1" data-nav="nav_0" id="question-1" selected="selected"
         style="" data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
                 class="">
-                    <div class="text_item" data-appbuilder-object="text">This is the first single choice question</div>
+                    <div class="text_item" data-appbuilder-object="text">Gli occhi degli esseri umani hanno sempre la stessa dimensione
+                        dal momento della nascita fino all’età adulta?</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_1" value="on" id="radio_1_0">
+                        <label for="radio_1_0">Vero</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
                         <input type="radio" name="radio_1" value="on" id="radio_1_1">
-                        <label for="radio_1_1">Radio 1</label>
+                        <label for="radio_1_1">Falso</label>
                     </div>
-                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
-                    data-appbuilder-object="radio">
-                        <input type="radio" name="radio_1" value="on" id="radio_1_2">
-                        <label for="radio_1_2">Radio 2</label>
-                    </div>
-                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
-                    data-appbuilder-object="radio">
-                        <input type="radio" name="radio_1" value="on" id="radio_1_3">
-                        <label for="radio_1_3">Radio 3</label>
-                    </div>
+
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-1-answer" class="button" href="#question-2" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
@@ -75,35 +76,229 @@ framework loads correctly tha page before running any code on it check this scri
                 </form>
             </div>
         </div>
-        <div class="panel" title="Question 2" data-nav="nav_0" id="question-2" data-appbuilder-object="page"
-        style="">
-            <form id="multiple-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-            class="">
-                <div class="text_item" data-appbuilder-object="text">This is the first multiple choice question</div>
-                <div class="checkbox_element form_element ui-sortable-helper" style="width: 100%; overflow: hidden; padding-bottom: 10px; height: 48px; position: relative; z-index: 1000; left: 0px; top: 0px;"
-                data-appbuilder-object="checkbox">
-                    <input type="checkbox" id="checkbox_2_1" name="checkbox_2">
-                    <label for="checkbox_2_1">Checkbox 1</label>
-                </div>
-                <div class="checkbox_element form_element ui-sortable-helper" style="width: 100%; overflow: hidden; padding-bottom: 10px; height: 48px; position: relative; z-index: 1000; left: 0px; top: 0px;"
-                data-appbuilder-object="checkbox">
-                    <input type="checkbox" id="checkbox_2_2" name="checkbox_2">
-                    <label for="checkbox_2_2">Checkbox 2</label>
-                </div>
-                <div class="checkbox_element form_element ui-sortable-helper" style="width: 100%; overflow: hidden; padding-bottom: 10px; height: 48px; position: relative; z-index: 1000; left: 0px; top: 0px;"
-                data-appbuilder-object="checkbox">
-                    <input type="checkbox" id="checkbox_2_3" name="checkbox_2">
-                    <label for="checkbox_2_3">Checkbox 3</label>
-                </div>
-                <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
-                    <a id="question-2-answer" class="button" href="#results" style="" data-appbuilder-object="button"
-                    data-transition="slide">OK</a>
-                    <input type="reset" id="question-2-clear" class="button" style="" data-appbuilder-object="button"
-                    value="Clear">
-                </div>
-            </form>
+        <div class="panel" title="Domanda 2" data-nav="nav_0" id="question-2" style=""
+        data-appbuilder-object="page">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
+                class="">
+                    <div class="text_item" data-appbuilder-object="text">Statisticamente qual’è l’animale più pericoloso per l’uomo?</div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_2" value="on" id="radio_2_0">
+                        <label for="radio_2_0">Lo squalo bianco</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_2" value="on" id="radio_2_1">
+                        <label for="radio_2_1">Il cane</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_2" value="on" id="radio_2_2">
+                        <label for="radio_2_2">La mosca</label>
+                    </div>
+
+                    <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
+                        <a id="question-2-answer" class="button" href="#question-3" data-appbuilder-object="button"
+                        data-transition="slide">OK</a>
+                        <input type="reset" id="question-2-clear" class="button" style="" data-appbuilder-object="button"
+                        value="Clear">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="panel" title="Results" data-nav="nav_0" id="results" data-appbuilder-object="page"
+        <div class="panel" title="Domanda 3" data-nav="nav_0" id="question-3" style=""
+        data-appbuilder-object="page">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
+                class="">
+                    <div class="text_item" data-appbuilder-object="text">Una termocoppia è:</div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_3" value="on" id="radio_3_0">
+                        <label for="radio_3_0">Un sensore di tempratura.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_3" value="on" id="radio_3_1">
+                        <label for="radio_3_1">un generatore termico.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_3" value="on" id="radio_3_2">
+                        <label for="radio_3_2">Entrambe le precedenti.</label>
+                    </div>
+
+                    <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
+                        <a id="question-3-answer" class="button" href="#question-4" data-appbuilder-object="button"
+                        data-transition="slide">OK</a>
+                        <input type="reset" id="question-3-clear" class="button" style="" data-appbuilder-object="button"
+                        value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel" title="Domanda 4" data-nav="nav_0" id="question-4" style=""
+        data-appbuilder-object="page">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
+                class="">
+                    <div class="text_item" data-appbuilder-object="text">Un materiale dielettrico è:</div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_4" value="on" id="radio_4_0">
+                        <label for="radio_4_0">un buon conduttore di elettricità.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_4" value="on" id="radio_4_1">
+                        <label for="radio_4_1">un isolante che può essere polarizzato da un campo elettrico.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_4" value="on" id="radio_4_2">
+                        <label for="radio_4_2">un cattivo conduttore di elettricità.</label>
+                    </div>
+
+                    <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
+                        <a id="question-4-answer" class="button" href="#question-5" data-appbuilder-object="button"
+                        data-transition="slide">OK</a>
+                        <input type="reset" id="question-4-clear" class="button" style="" data-appbuilder-object="button"
+                        value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel" title="Domanda 5" data-nav="nav_0" id="question-5" style=""
+        data-appbuilder-object="page">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
+                class="">
+                    <div class="text_item" data-appbuilder-object="text">Carcassonne è:</div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_5" value="on" id="radio_5_0">
+                        <label for="radio_5_0">una città francese della Languedoc-Roussillon.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_5" value="on" id="radio_5_1">
+                        <label for="radio_5_1">un gioco in scatola.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_5" value="on" id="radio_5_2">
+                        <label for="radio_5_2">entrambe le precedenti.</label>
+                    </div>
+
+                    <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
+                        <a id="question-5-answer" class="button" href="#question-6" data-appbuilder-object="button"
+                        data-transition="slide">OK</a>
+                        <input type="reset" id="question-5-clear" class="button" style="" data-appbuilder-object="button"
+                        value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel" title="Domanda 6" data-nav="nav_0" id="question-6" style=""
+        data-appbuilder-object="page">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
+                class="">
+                    <div class="text_item" data-appbuilder-object="text">Socotra è:</div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_6" value="on" id="radio_6_0">
+                        <label for="radio_6_0">un’isola appartenente alla Repubblica dello Yemen.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_6" value="on" id="radio_6_1">
+                        <label for="radio_6_1">un paese in provincia di Cagliari.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_6" value="on" id="radio_6_2">
+                        <label for="radio_6_2">un piatto tipico somalo.</label>
+                    </div>
+
+                    <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
+                        <a id="question-6-answer" class="button" href="#question-7" data-appbuilder-object="button"
+                        data-transition="slide">OK</a>
+                        <input type="reset" id="question-6-clear" class="button" style="" data-appbuilder-object="button"
+                        value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel" title="Domanda 7" data-nav="nav_0" id="question-7" style=""
+        data-appbuilder-object="page">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
+                class="">
+                    <div class="text_item" data-appbuilder-object="text">Chi è il maggior produttore di pneumatici al mondo?</div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_7" value="on" id="radio_7_0">
+                        <label for="radio_7_0">Michelin.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_7" value="on" id="radio_7_1">
+                        <label for="radio_7_1">Bridgestone.</label>
+                    </div>
+                    <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
+                    data-appbuilder-object="radio">
+
+
+                        <input type="radio" name="radio_7" value="on" id="radio_7_2">
+                        <label for="radio_7_2">Lego.</label>
+                    </div>
+
+                    <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
+                        <a id="question-7-answer" class="button" href="#results" data-appbuilder-object="button"
+                        data-transition="slide">OK</a>
+                        <input type="reset" id="question-7-clear" class="button" style="" data-appbuilder-object="button"
+                        value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel" title="Punteggio" data-nav="nav_0" id="results" data-appbuilder-object="page"
         style="">
             <div class="grid" data-appbuilder-object="grid2">
                 <div class="container col2" data-appbuilder-object="container">
