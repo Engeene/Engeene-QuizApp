@@ -9,6 +9,16 @@ var questions = new Array(7);
  */
 $.ui.ready(function() {
   /*
+   * Here we make sure our application correctly handles the Android's back
+   * button. Intel's documentation states that this must be called for each
+   * page, but practice shows that once is enough, and multiple times causes
+   * the handler not to handle all the key presses (it stacks calls, and
+   * handles the press only when the stack is empty). Probably this makes
+   * sense if someone handles the intel.xdk.device.hardware.back event.
+   */
+  intel.xdk.device.addVirtualPage();
+
+  /*
    * Here we save the status of the first answer (correct or not).
    * This event is fired when the "OK" button on the panel, the
    * one with id "question-1-answer", is clicked.
