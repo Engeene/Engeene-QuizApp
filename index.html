@@ -45,11 +45,19 @@ framework loads correctly tha page before running any code on it check this scri
              attribute marks the default panel, that is the one that will open when the
              application starts. Remember to give panels a proper name (it will be visible
              by the user), and a unique HTML id (it will be used in your JS code. -->
-        <div class="panel" title="Domanda 1" data-nav="nav_0" id="question-1" selected="selected"
-        style="" data-appbuilder-object="page">
+        <div class="panel" title="Home" data-nav="nav_0" id="main" data-appbuilder-object="page"
+        style="" selected="selected">
+            <div class="container" style="width:100%" data-appbuilder-object="container">
+                <div class="text_item" data-appbuilder-object="text">Sei pronto a incominciare il nostro quiz?</div><a class="button"
+                href="#question-1" style="position: relative; z-index: 2;" data-appbuilder-object="button"
+                data-transition="slide" id="start">Start</a>
+            </div>
+        </div>
+        <div class="panel" title="Domanda 1" data-nav="nav_0" id="question-1" style=""
+        data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Gli occhi degli esseri umani hanno sempre la stessa dimensione
                         dal momento della nascita fino all’età adulta?</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
@@ -70,8 +78,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-1-answer" class="button" href="#question-2" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-1-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
@@ -80,7 +86,7 @@ framework loads correctly tha page before running any code on it check this scri
         data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Statisticamente qual’è l’animale più pericoloso per l’uomo?</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
@@ -107,8 +113,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-2-answer" class="button" href="#question-3" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-2-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
@@ -116,8 +120,8 @@ framework loads correctly tha page before running any code on it check this scri
         <div class="panel" title="Domanda 3" data-nav="nav_0" id="question-3" style=""
         data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
-                <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                <form id="single-choice" style="width: 100%; min-height: 50px; position: relative;"
+                data-appbuilder-object="form" class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Una termocoppia è:</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
@@ -144,8 +148,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-3-answer" class="button" href="#question-4" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-3-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
@@ -154,7 +156,7 @@ framework loads correctly tha page before running any code on it check this scri
         data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Un materiale dielettrico è:</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
@@ -181,8 +183,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-4-answer" class="button" href="#question-5" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-4-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
@@ -191,7 +191,7 @@ framework loads correctly tha page before running any code on it check this scri
         data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Carcassonne è:</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
@@ -218,8 +218,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-5-answer" class="button" href="#question-6" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-5-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
@@ -228,7 +226,7 @@ framework loads correctly tha page before running any code on it check this scri
         data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Socotra è:</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
@@ -255,8 +253,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-6-answer" class="button" href="#question-7" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-6-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
@@ -265,7 +261,7 @@ framework loads correctly tha page before running any code on it check this scri
         data-appbuilder-object="page">
             <div class="container" style="width:100%" data-appbuilder-object="container">
                 <form id="single-choice" style="width: 100%;min-height: 50px;" data-appbuilder-object="form"
-                class="">
+                class="input-group">
                     <div class="text_item" data-appbuilder-object="text">Chi è il maggior produttore di pneumatici al mondo?</div>
                     <div class="radio_element form_element" style="width: 100%; overflow: hidden; padding-bottom: 10px;"
                     data-appbuilder-object="radio">
@@ -292,8 +288,6 @@ framework loads correctly tha page before running any code on it check this scri
                     <div class="container" style="width: 50%; margin: 0 auto;" data-appbuilder-object="container">
                         <a id="question-7-answer" class="button" href="#results" data-appbuilder-object="button"
                         data-transition="slide">OK</a>
-                        <input type="reset" id="question-7-clear" class="button" style="" data-appbuilder-object="button"
-                        value="Clear">
                     </div>
                 </form>
             </div>
